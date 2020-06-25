@@ -129,16 +129,12 @@ for i in range(op):
             z[i] = math.asin(z[i - 1])
             del z[i - 1]
             break
-        elif z[i] == "atan":
+        elif z[i] == "atg":
             z[i] = math.atan(z[i - 1])
             del z[i - 1]
             break
         elif z[i] == "acos":
             z[i] = math.acos(z[i - 1])
-            del z[i - 1]
-            break
-        elif z[i] == "acot":
-            z[i] = math.tan(z[i - 1])
             del z[i - 1]
             break
         elif z[i] == "exp":
