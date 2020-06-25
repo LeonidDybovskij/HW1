@@ -138,7 +138,7 @@ for i in range(op):
             del z[i - 1]
             break
         elif z[i] == "acot":
-            z[i] = math.acot(z[i - 1])
+            z[i] = math.tan(z[i - 1])
             del z[i - 1]
             break
         elif z[i] == "exp":
