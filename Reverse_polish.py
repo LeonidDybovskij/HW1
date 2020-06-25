@@ -36,6 +36,7 @@ print('Вычислять выражения в ОПЗ можно последо
 print("<form action= 'Reverse_polish.py'>")
 print("        <input type='text' name='TEXT_1'>")
 print("        <input type='submit'>")
+print('<p>Введите выражение в ОПЗ (десятичный разделитель - точка)')
 print("    </form>")
 form = cgi.FieldStorage()
 text1 = form.getfirst("TEXT_1", "nothing")
@@ -58,7 +59,7 @@ for i in range(len(z)):
         op += 1
     elif z[i] == "sin":
         op += 1
-    elif z[i] == "tan":
+    elif z[i] == "tg":
         op += 1
     elif z[i] == "cos":
         op += 1
@@ -111,7 +112,7 @@ for i in range(op):
             z[i] = math.sin(z[i - 1])
             del z[i - 1]
             break
-        elif z[i] == "tan":
+        elif z[i] == "tg":
             z[i] = math.tan(z[i - 1])
             del z[i - 1]
             break
@@ -119,8 +120,9 @@ for i in range(op):
             z[i] = math.cos(z[i - 1])
             del z[i - 1]
             break
-        elif z[i] == "cot":
+        elif z[i] == "ctg":
             z[i] = math.cot(z[i - 1])
+            z[i] = 1/z[i]
             del z[i - 1]
             break
         elif z[i] == "asin":
