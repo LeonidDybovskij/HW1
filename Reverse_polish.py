@@ -65,7 +65,7 @@ for i in range(len(z)):
         op += 1
     elif z[i] == "asin":
         op += 1
-    elif z[i] == "atan":
+    elif z[i] == "atg":
         op += 1
     elif z[i] == "acos":
         op += 1
