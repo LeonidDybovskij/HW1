@@ -1,7 +1,5 @@
 ### A reverse polish notation calculator
 
-[This README in russian](README.ru.md)
-
 The file Reverse_polish.py is a cgi-script, which should be located in the folder cgi-bin, which in turn should be in the folder of a working web-server.
 There are no buttons, operands and operations have to be printed in a single line and should be delimited by spaces (decimal separator – a point).
 
