@@ -5,4 +5,4 @@ There are no buttons, operands and operations have to be printed in a single lin
 
 Possible operations: "+", "-", "*", "/", "log", "^", "sin", "tg", "cos", "asin", "atg", "acos", "exp", "ln".
 
-There are no raising errors in respond for user's incorrect actions. 
+There are no raising errors in respond for user's incorrect actions.  
